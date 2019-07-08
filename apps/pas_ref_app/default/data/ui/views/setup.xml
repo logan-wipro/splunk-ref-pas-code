@@ -3,7 +3,7 @@
     <label>Setup</label>
     <search id="departments_search">
         <query>
-            tag=pas tag=change tag=audit | stats count by department
+            index=pas tag=pas tag=change tag=audit | stats count by department
         </query>
         <earliest>@d</earliest>
         <latest>now</latest>
